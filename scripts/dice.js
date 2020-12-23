@@ -6,8 +6,8 @@ var dice2 = document.getElementsByTagName("i")[4];
 
 function roll() {
    var removeHidden = document.querySelector("h3").classList.remove("hidden");
-   document.getElementById("dice1").setAttribute("src", `/img/dice-${a}.svg`);
-   document.getElementById("dice2").setAttribute("src", `/img/dice-${b}.svg`);
+   document.getElementById("dice1").setAttribute("src", `img/dice-${a}.svg`);
+   document.getElementById("dice2").setAttribute("src", `img/dice-${b}.svg`);
 
    if (a === b) {
       removeHidden;
