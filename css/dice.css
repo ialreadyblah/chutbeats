@@ -1,0 +1,43 @@
+body {
+   font-family: "Oxygen", sans-serif;
+   background-color: #fcf9ec;
+   color: #555555;
+}
+
+/* title */
+h1 span {
+   color: #12d3cf;
+}
+
+#title button {
+   margin: 30px 0 10px;
+   border: none;
+}
+
+#title button:hover {
+   background-color: #12d3cf;
+}
+
+#title {
+   padding: 50px 0 30px;
+}
+
+/* stage */
+.hidden {
+   visibility: hidden;
+}
+.player {
+   padding: 20px 0 30px;
+}
+
+.winner {
+   color: #67eaca;
+}
+
+.dice {
+   height: 5rem;
+}
+
+.status {
+   margin-top: 100%;
+}

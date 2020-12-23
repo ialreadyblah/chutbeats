@@ -1,0 +1,294 @@
+body {
+   text-align: center;
+   color: #333333;
+}
+
+/* nav */
+nav {
+   position: absolute;
+   width: 100%;
+   z-index: 1;
+   height: 15vh;
+}
+
+.nav-links {
+   display: flex;
+   list-style: none;
+   width: 50%;
+   height: 100%;
+   justify-content: space-around;
+   align-items: center;
+   margin-left: auto;
+}
+
+.nav-links li a {
+   text-decoration: none;
+}
+
+nav .img-frame {
+   position: absolute;
+   top: 20px;
+   left: 50px;
+   width: 100px;
+   height: 100px;
+   border-radius: 100%;
+}
+
+nav .img-frame img {
+   position: relative;
+   top: 20px;
+   width: 50px;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+h1 {
+   color: #75cac3;
+   margin: 50px auto 0 auto;
+   font-size: 5rem;
+   font-family: "Sacramento", cursive;
+}
+
+h2 {
+   color: #75cac3;
+   font-weight: normal;
+}
+
+h3 {
+   font-weight: normal;
+   color: #2a6171;
+}
+
+
+.top-container {
+   position: relative;
+   padding-top: 200px;
+   height: 700px;
+   background-color: #d7f7f5;
+   overflow: hidden;
+}
+
+.work-top-container {
+   padding-top: 150px;
+   position: relative;
+   height: 400px;
+   background-color: #d7f7f5;
+}
+
+#pencil-svg {
+   height: 200px;
+   margin: 100px 0 50px 0;
+}
+
+.card {
+   border: none;
+}
+
+.top-container h2 span {
+   text-decoration: underline;
+}
+
+.top-cloud {
+   position: absolute;
+   right: 20%;
+   top: 20%;
+   width: 150px;
+}
+
+.bottom-cloud {
+   width: 150px;
+   position: absolute;
+   left: 20%;
+}
+
+.mountain {
+   position: relative;
+   width: 700px;
+   margin: 0 auto;
+   bottom: -65px;
+}
+
+.middle-container {
+   padding: 100px 0 70px 0;
+}
+
+p {
+   font-weight: 300;
+   line-height: 2em;
+}
+
+.intro {
+   width: 50%;
+   margin: 20px auto 0 auto;
+}
+
+.img-frame {
+   background-color: #eeeeee;
+   margin: 0 auto 40px auto;
+   width: 150px;
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+#img-frame img {
+   position: relative;
+   top: 20px;
+}
+
+hr {
+   width: 10%;
+}
+
+.skills {
+   margin: 0 auto;
+   width: 50%;
+   text-align: left;
+}
+
+.skills-row {
+   margin: 100px 0 100px 0;
+}
+
+.skill-img-frame {
+   background-color: #eeeeee;
+   height: 120px;
+   border-radius: 100%;
+   width: 120px;
+   overflow: hidden;
+   float: left;
+   margin-right: 30px;
+}
+
+.design-img {
+   position: relative;
+   width: 150%;
+   right: 29px;
+   bottom: 9px;
+}
+
+.chuts-img {
+   float: right;
+   width: 10%;
+   margin-left: 30px;
+}
+
+.contact h3 {
+   margin: 50px 0 40px 0;
+}
+
+.contact button {
+   margin-top: 30px;
+   background-color: #f34573;
+   border: none;
+}
+
+.contact button:hover {
+   background-color: #75cac3;
+}
+
+.work1 {
+   margin-top: 100px;
+   background-color: #4592af;
+   padding: 100px 0;
+}
+
+.work1 p {
+   margin: 0 auto;
+   width: 80%;
+}
+
+.work2 {
+   padding: 100px 0;
+   background-color: #76b39d;
+}
+
+.work3 {
+   background-color: #ff4057;
+   padding: 100px 0;
+}
+
+.work3 p {
+   margin: 0 auto;
+   width: 80%;
+}
+
+.work4 {
+   background-color: #211717;
+   padding: 100px 0;
+}
+
+.work5 {
+   background-color: #f6a7ba;
+   padding: 100px 0;
+}
+
+footer {
+   margin-top: 100px;
+   padding: 20px;
+   height: 100px;
+   background-color: #d7f7f5;
+}
+
+footer a {
+   color: #2a6171;
+}
+
+footer small {
+   color: #2a6171;
+}
+
+@media screen and (max-width: 768px) {
+   .line {
+      width: 40px;
+      height: 4px;
+      background-color: white;
+      margin: 7px;
+   }
+   .hamburger {
+      cursor: pointer;
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+   }
+   .chuts-img {
+      float: none;
+      width: 30%;
+   }
+   .nav-links {
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      background-color: #d7f7f5;
+      flex-direction: column; 
+      clip-path: circle(100px at 90% -20%);
+      -webkit-clip-path: circle(100px at 90% -20%);
+      transition: all .5s ease-out;
+   }
+   .nav-links.open {
+      clip-path: circle(950px at 90% -20%);
+      -webkit-clip-path: circle(950px at 90% -20%);
+      pointer-events: all;
+   }
+   .nav-links li {
+      opacity: 0;
+   }
+   .nav-links li a {
+      font-size: 20px;
+   }
+   .nav-links li:nth-child(1){
+      transition: all .5s ease 0.4s;
+   }
+   .nav-links li:nth-child(2){
+      transition: all .5s ease 0.7s;
+   }
+   .nav-links li:nth-child(3){
+      transition: all .5s ease 1s;
+   }
+  .nav-links li.fade{
+      opacity: 1;
+   }
+}

